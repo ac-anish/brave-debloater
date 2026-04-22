@@ -33,7 +33,7 @@ This project disables **Brave AI, Rewards, Wallet, VPN, Telemetry, News, Talk, S
    `sudo curl -L -O https://raw.githubusercontent.com/anxarden/brave-debloater/main/policies.json`
 3. Restart Brave to apply the changes. Verify applied policies by visiting: `brave://policy/`
 
-### 📦 Usage – Linux (Flatpak)
+### 📦 Usage – Flatpak
 1. Create the managed policies directory (if it doesn't exist): \
    `sudo mkdir -p /etc/brave/policies/managed/`
 2. Copy `policies.json` into the directory: \
