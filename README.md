@@ -26,17 +26,25 @@ This project disables **Brave AI, Rewards, Wallet, VPN, Telemetry, News, Talk, S
 4. Verify applied policies by visiting: `brave://policy/`
 
 ### 🐧 Usage – Linux
-
-1. Download the `policies.json` file from the repo root. 
-2. Create the managed policies directory (if it doesn't exist):
+1. Create the managed policies directory (if it doesn't exist): \
    `sudo mkdir -p /etc/brave/policies/managed/`
-3. Copy `policies.json` into the directory:
-   `sudo cp policies.json /etc/brave/policies/managed/`
-4. Restart Brave to apply the changes.
-5. Verify applied policies by visiting: `brave://policy/`
+2. Copy `policies.json` into the directory: \
+   `cd /etc/brave/policies/managed/` \
+   `sudo curl -L -O https://raw.githubusercontent.com/anxarden/brave-debloater/main/policies.json`
+3. Restart Brave to apply the changes. Verify applied policies by visiting: `brave://policy/`
+
+### 📦 Usage – Linux (Flatpak)
+1. Create the managed policies directory (if it doesn't exist): \
+   `sudo mkdir -p /etc/brave/policies/managed/`
+2. Copy `policies.json` into the directory: \
+   `cd /etc/brave/policies/managed/` \
+   `sudo curl -L -O https://raw.githubusercontent.com/anxarden/brave-debloater/main/policies.json`
+3. Grant the Flatpak app access to the policies directory: \
+   `sudo flatpak override --filesystem=/etc/brave/policies/managed com.brave.Browser`
+4. Restart Brave to apply the changes. Verify applied policies by visiting: `brave://policy/`
+
 > **Note:** The JSON file can be used **as-is**; no renaming is required. Secure DNS is enforced by default, but you can choose a different provider.
 
----
 
 ### 📜 Policies
 
