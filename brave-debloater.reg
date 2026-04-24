@@ -13,7 +13,7 @@ Windows Registry Editor Version 5.00
 "BraveVPNDisabled"=dword:00000001
 
 ; === Network / Privacy / Telemetry ===
-"TorDisabled"=dword:00000001
+"TorDisabled"=dword:00000000
 "BraveP3AEnabled"=dword:00000000
 "BraveStatsPingEnabled"=dword:00000000
 "BraveWebDiscoveryEnabled"=dword:00000000
@@ -26,7 +26,7 @@ Windows Registry Editor Version 5.00
 "BravePlaylistEnabled"=dword:00000000
 
 ; === Sync, Autofill, Passwords, Translate ===
-"SyncDisabled"=dword:00000000
+"SyncDisabled"=dword:00000001
 "PasswordManagerEnabled"=dword:00000000
 "AutofillAddressEnabled"=dword:00000000
 "AutofillCreditCardEnabled"=dword:00000000
@@ -34,6 +34,6 @@ Windows Registry Editor Version 5.00
 
 ; === Secure DNS (DNS over HTTPS) [Edit Provider as You Like] ===
 "DnsOverHttpsMode"="secure"
-"DnsOverHttpsTemplates"="https://dns.adguard-dns.com/dns-query"
+"DnsOverHttpsTemplates"="https://cloudflare-dns.com/dns-query"
 
 
