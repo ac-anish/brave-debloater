@@ -25,15 +25,24 @@ Windows Registry Editor Version 5.00
 "BraveWaybackMachineEnabled"=dword:00000000
 "BravePlaylistEnabled"=dword:00000000
 
-; === Sync, Autofill, Passwords, Translate ===
+; === Sync, Autofill, Passwords, Translate, Payments ===
 "SyncDisabled"=dword:00000001
 "PasswordManagerEnabled"=dword:00000000
 "AutofillAddressEnabled"=dword:00000000
 "AutofillCreditCardEnabled"=dword:00000000
 "TranslateEnabled"=dword:00000000
+"PaymentMethodQueryEnabled"=dword:00000000
 
 ; === Secure DNS (DNS over HTTPS) [Edit Provider as You Like] ===
 "DnsOverHttpsMode"="secure"
 "DnsOverHttpsTemplates"="https://cloudflare-dns.com/dns-query"
 
+; === System / Background / UX ===
+"BackgroundModeEnabled"=dword:00000000
+"SpellcheckEnabled"=dword:00000000
+
+; === Permissions (Global Defaults) ===
+"DefaultNotificationsSetting"=dword:00000002
+"DefaultGeolocationSetting"=dword:00000002
+"DefaultClipboardSetting"=dword:00000002
 
